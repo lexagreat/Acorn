@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Acorn</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap&_v=20220620163010"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220620163010">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class="header__row">
+      <div class="header__left">
+         <div class="header__langs header-langs langs">
+            <div class="header-langs__item header-langs__ru" id="ru">ru</div>
+            <span></span>
+            <div class="header-langs__item header-langs__en active" id="en">en</div>
+         </div>
+         <div class="header__logo svg">
+            <a href="#">
+               <svg width="152" height="24" viewBox="0 0 152 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M7.82112 2.75918C4.81739 3.47597 0.630755 5.16615 0.183819 5.7672C-0.263117 6.36824 0.235406 9.88457 0.314882 10.3181C0.394358 10.7516 0.625693 10.8167 0.755613 10.8094C0.885534 10.8021 1.96251 9.50438 2.4059 9.175C3.57285 8.30813 3.9632 8.06271 4.45 8.06717C4.97143 7.96785 6.05155 8.56377 7.20615 8.00509C8.33948 7.45671 9.47399 7.07396 9.92507 6.99947C10.5246 6.96358 12.2477 7.18035 14.3447 8.33447C16.4416 9.4886 18.3204 10.1022 18.9977 10.2648C19.3405 10.347 20.0075 10.6996 20.2671 10.0819C20.5917 9.30979 20.4099 6.81054 20.4099 6.394C20.4099 6.06076 20.3147 5.95845 20.2671 5.94894C18.3398 4.25906 13.5546 3.11832 11.4029 2.75918C11.1418 2.59105 10.7763 2.12852 11.4029 1.6235C12.0295 1.11847 12.1082 0.797376 12.0692 0.699956C11.8588 0.279103 10.8885 0.127162 10.4092 0.0102587C10.0257 -0.0832643 9.63372 0.485668 9.48565 0.781825C8.76552 1.99762 8.07591 2.60665 7.82112 2.75918Z"
+                     fill="#333333" />
+                  <path
+                     d="M1.90362 12.047L2.45371 13.8456C2.883 13.456 4.76687 12.3103 6.71823 11.3609C8.66958 10.4116 10.1411 10.6608 11.4419 10.8618C12.7958 11.0451 15.0602 12.8481 15.2333 13.0471C15.3718 13.2064 17.0045 14.1231 17.8035 14.5616C18.1427 14.077 18.4987 12.3346 18.6343 11.524C18.8655 11.6092 16.6932 10.9835 14.4542 9.62058C12.2151 8.25769 11.1551 8.28486 10.9929 8.27221C10.7665 8.25456 9.09105 8.13215 7.80105 8.92827C6.76905 9.56516 6.06876 9.64084 5.84762 9.59907C3.96053 9.06243 2.432 11.0074 1.90362 12.047Z"
+                     fill="#333333" />
+                  <path
+                     d="M3.34431 15.8917C3.32758 16.0757 4.07447 17.0138 4.45 17.4599C5.20607 16.6791 7.11203 14.9657 8.68723 14.359C10.6562 13.6006 11.4647 14.4507 11.9438 14.8349C12.2644 15.0918 14.1398 16.4328 14.3447 16.6639C14.8571 17.242 15.3613 17.4049 16.0183 17.6305L17.1187 15.9204C17.1187 15.9204 16.7656 15.4259 16.1224 15.2215C15.4792 15.0171 15.0727 14.8353 14.6948 14.5616C13.7455 13.874 12.6248 12.9629 12.1474 12.7761C9.33058 11.9155 8.59828 12.2935 8.23722 12.3997C7.37111 12.6544 3.36522 15.6616 3.34431 15.8917Z"
+                     fill="#333333" />
+                  <path
+                     d="M5.84762 19.0888C6.28786 19.6447 6.717 19.91 6.87655 19.9732L7.53982 19.531C7.95568 19.1731 8.95164 18.4003 9.6086 18.1729C10.4298 17.8886 11.4419 18.4572 12.3407 18.7888C13.0597 19.0541 13.7141 19.5521 13.9515 19.7679L15.1359 18.694C14.9211 18.3782 14.162 18.0255 13.8093 17.8886C13.5303 17.8465 12.6439 17.5426 11.33 16.6639C10.016 15.7852 9.02068 16.2978 8.68723 16.6639L5.84762 19.0888Z"
+                     fill="#333333" />
+                  <path
+                     d="M8.8277 21.341L10.2348 22L12.1474 21.0026C11.9907 20.8245 11.4673 20.4469 10.6266 20.3614C9.78593 20.2759 9.07705 20.9788 8.8277 21.341Z"
+                     fill="#333333" />
+                  <path
+                     d="M78.3398 12.4547C78.3398 17.5628 82.9387 20.5461 90.7281 20.5461C98.5176 20.5461 103.116 17.5628 103.116 12.4547C103.116 7.34659 98.5176 4.36328 90.7281 4.36328C82.9387 4.36328 78.3398 7.34659 78.3398 12.4547ZM98.9357 12.4547C98.9357 15.5024 96.0311 17.3267 90.7281 17.3267C85.4252 17.3267 82.5206 15.5024 82.5206 12.4547C82.5206 9.40701 85.4252 7.58268 90.7281 7.58268C96.0311 7.58268 98.9357 9.40701 98.9357 12.4547Z"
+                     fill="#333333" />
+                  <path
+                     d="M53.5625 12.4547C53.5625 17.5628 58.245 20.5461 66.1986 20.5461C69.5593 20.5461 72.3823 20.0096 75.5637 18.4428V14.9658L75.4517 14.9444C72.6287 16.4038 69.5817 17.3267 66.3555 17.3267C60.7095 17.3267 57.8194 15.5024 57.8194 12.4762C57.8194 9.40701 60.7767 7.58268 66.3555 7.58268C69.5817 7.58268 72.6287 8.48411 75.4517 9.96504L75.5861 9.94358V6.46662C72.6735 5.02862 69.6265 4.36328 65.9522 4.36328C58.2226 4.36328 53.5625 7.34659 53.5625 12.4547Z"
+                     fill="#333333" />
+                  <path
+                     d="M49.0651 20.5461H53.561L43.9301 4.36328H39.6105L29.4727 20.5461H33.9686L35.952 17.2961H47.1918L49.0651 20.5461ZM37.9355 14.0013L41.7262 7.79261L45.2965 14.0013H37.9355Z"
+                     fill="#333333" />
+                  <path
+                     d="M147.861 4.36328V16.1978L134.333 4.36328H129.977V20.5461H134.116V9.04779L147.208 20.5461H152V4.36328H147.861Z"
+                     fill="#333333" />
+                  <path
+                     d="M121.401 15.0323C124.838 14.4271 126.713 12.634 126.713 9.83228C126.713 6.29088 123.7 4.36328 118.299 4.36328H105.891V20.5461H110.131V15.2789H116.603L122.004 20.5461H127.159L127.226 20.4565L121.401 15.0323ZM110.131 7.72537H118.187C121.022 7.72537 122.472 8.17365 122.472 9.83228C122.472 11.4685 121.022 11.9168 118.187 11.9168H110.131V7.72537Z"
+                     fill="#333333" />
+               </svg>
+            </a>
+         </div>
+      </div>
+      <div class="header__right">
+         <div class="header__burger header-burger">
+            <div class="header-burger__button">
+               <span></span>
+            </div>
+            <div class="header-burger__line"></div>
+            <div class="header-burger__text" lang="en">Main page</div>
+            <div class="header-burger__text" lang="ru">Главная страница</div>
+         </div>
+         <div class="header__contacts header-contacts">
+            <div class="header-contacts__span" lang="en">Contacts</div>
+            <div class="header-contacts__span" lang="ru">Контакты</div>
+            <div class="header-contacts__social header-social">
+               <div class="header-social__tg svg">
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M16.788 19.3344C17.0295 19.5054 17.3407 19.5481 17.6182 19.4431C17.8957 19.3374 18.0997 19.1004 18.1612 18.8131C18.8129 15.7501 20.3939 7.99737 20.9871 5.21111C21.0321 5.00111 20.9571 4.78286 20.7921 4.64261C20.6271 4.50236 20.3984 4.46186 20.1944 4.53761C17.0497 5.70161 7.3652 9.33537 3.40679 10.8001C3.15554 10.8931 2.99205 11.1346 3.0003 11.3994C3.0093 11.6649 3.18779 11.8951 3.44504 11.9724C5.22025 12.5034 7.55044 13.2421 7.55044 13.2421C7.55044 13.2421 8.63942 16.5309 9.20716 18.2034C9.27841 18.4134 9.44265 18.5784 9.6594 18.6354C9.87539 18.6916 10.1064 18.6324 10.2676 18.4801C11.1796 17.6191 12.5896 16.2879 12.5896 16.2879C12.5896 16.2879 15.2685 18.2521 16.788 19.3344ZM8.53067 12.8266L9.78989 16.9801L10.0696 14.3499C10.0696 14.3499 14.9348 9.96162 17.7082 7.46036C17.7892 7.38686 17.8005 7.26386 17.733 7.17761C17.6662 7.09136 17.5432 7.07111 17.451 7.12961C14.2365 9.18237 8.53067 12.8266 8.53067 12.8266Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="header-social__tw svg">
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M21 6.27927C20.3381 6.57995 19.627 6.78311 18.8794 6.87493C19.6508 6.40181 20.2278 5.65718 20.503 4.77997C19.7783 5.22122 18.9851 5.53181 18.158 5.69824C17.6018 5.08947 16.8651 4.68597 16.0623 4.55038C15.2594 4.41479 14.4354 4.5547 13.7181 4.94839C13.0007 5.34208 12.4303 5.96752 12.0953 6.72761C11.7602 7.4877 11.6794 8.33991 11.8652 9.15193C10.3968 9.07635 8.96033 8.68511 7.64898 8.0036C6.33762 7.32209 5.18071 6.36554 4.25332 5.19603C3.93623 5.75675 3.7539 6.40686 3.7539 7.09922C3.75354 7.72251 3.90328 8.33624 4.18981 8.88598C4.47634 9.43572 4.89082 9.90446 5.39646 10.2506C4.81005 10.2315 4.23658 10.0691 3.72377 9.77684V9.8256C3.72371 10.6998 4.0187 11.5471 4.55868 12.2237C5.09865 12.9003 5.85036 13.3646 6.68625 13.5377C6.14226 13.6886 5.57192 13.7109 5.01832 13.6027C5.25416 14.3549 5.71355 15.0127 6.33219 15.4839C6.95082 15.9551 7.69772 16.2163 8.46833 16.2308C7.16018 17.2835 5.54461 17.8545 3.88153 17.852C3.58693 17.8521 3.29258 17.8344 3 17.7992C4.68813 18.9118 6.65322 19.5023 8.66018 19.5C15.454 19.5 19.168 13.7319 19.168 8.72936C19.168 8.56683 19.164 8.40268 19.1569 8.24016C19.8793 7.70461 20.5029 7.04144 20.9984 6.28171L21 6.27927Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="header-social__ws svg">
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M3 21L4.27129 16.3778C3.48681 15.0247 3.0746 13.491 3.07536 11.9183C3.07762 7.00125 7.09796 3 12.0377 3C14.4348 3.00075 16.685 3.93 18.3775 5.616C20.0693 7.302 21.0008 9.543 21 11.9265C20.9977 16.8443 16.9774 20.8455 12.0377 20.8455C10.5381 20.8448 9.06029 20.4705 7.75132 19.7595L3 21ZM7.97136 18.1448C9.23436 18.891 10.4401 19.338 12.0347 19.3387C16.1402 19.3387 19.4846 16.0133 19.4868 11.925C19.4883 7.8285 16.1598 4.5075 12.0407 4.506C7.93218 4.506 4.59005 7.8315 4.58855 11.919C4.58779 13.5878 5.07913 14.8372 5.90429 16.1445L5.15147 18.8805L7.97136 18.1448ZM16.5524 14.0468C16.4966 13.9537 16.3474 13.8982 16.1228 13.7865C15.899 13.6748 14.798 13.1355 14.5923 13.0612C14.3873 12.987 14.2381 12.9495 14.0882 13.173C13.939 13.3958 13.5094 13.8982 13.379 14.0468C13.2487 14.1953 13.1176 14.214 12.8937 14.1023C12.6699 13.9905 11.948 13.7557 11.0927 12.996C10.4273 12.405 9.97739 11.6753 9.84702 11.4517C9.71665 11.229 9.83346 11.1082 9.94499 10.9973C10.046 10.8975 10.1688 10.737 10.2811 10.6065C10.3949 10.4775 10.4318 10.3845 10.5072 10.2353C10.5818 10.0868 10.5448 9.95625 10.4883 9.8445C10.4318 9.7335 9.98417 8.63625 9.79804 8.19C9.61567 7.75575 9.43105 7.81425 9.2939 7.8075L8.86436 7.8C8.71515 7.8 8.47249 7.8555 8.26752 8.079C8.06255 8.3025 7.4838 8.841 7.4838 9.93825C7.4838 11.0355 8.28636 12.0953 8.39789 12.2437C8.51017 12.3923 9.97664 14.6438 12.2231 15.609C12.7573 15.8385 13.1748 15.9757 13.4996 16.0785C14.0362 16.248 14.5245 16.224 14.9103 16.167C15.3406 16.1032 16.2351 15.6277 16.422 15.1073C16.6089 14.586 16.6089 14.1398 16.5524 14.0468Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <nav class="menu">
+      <div class="menu__line"></div>
+      <div class="menu__column menu-column">
+         <div class="menu-column__item">
+            <div class="menu-column__title" lang="en">Company</div>
+            <div class="menu-column__title" lang="ru">Компания</div>
+            <ul class="menu-column__list">
+               <li class="activePage" lang="en"><a href="">Main page</a></li>
+               <li class="activePage" lang="ru"><a href="">Главная страница</a></li>
+               <li lang="en"><a href="">Presentation</a></li>
+               <li lang="en"><a href="">Departments</a></li>
+               <li lang="en"><a href="">Contacts</a></li>
+               <li lang="ru"><a href="">Презентация</a></li>
+               <li lang="ru"><a href="">Департаменты</a></li>
+               <li lang="ru"><a href="">Контакты</a></li>
+            </ul>
+         </div>
+         <div class="menu-column__item">
+            <div class="menu-column__title" lang="en">Work</div>
+            <div class="menu-column__title" lang="ru">Работа</div>
+            <ul class="menu-column__list">
+               <li lang="en"><a href="">Directions</a></li>
+               <li lang="en"><a href="">Experience</a></li>
+               <li lang="ru"><a href="">Директора</a></li>
+               <li lang="ru"><a href="">Опыт</a></li>
+            </ul>
+         </div>
+         <div class="menu-column__item">
+            <div class="menu-column__title" lang="en">About</div>
+            <div class="menu-column__title" lang="ru">О нас</div>
+            <ul class="menu-column__list">
+               <li lang="en"><a href="">Our mission</a></li>
+               <li lang="en"><a href="">About us</a></li>
+               <li lang="en"><a href="">Our team</a></li>
+               <li lang="ru"><a href="">Наша миссия</a></li>
+               <li lang="ru"><a href="">О нас</a></li>
+               <li lang="ru"><a href="">Наша команда</a></li>
+            </ul>
+         </div>
+         <div class="menu-column__item menu-column__item_adapt menu-column__item_adapt500">
+            <div class="menu-column__title" lang="en">Contacts</div>
+            <div class="menu-column__title" lang="ru">Контакты</div>
+            <ul class="menu-column__list menu-column__list_row">
+               <li>
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M16.788 19.3344C17.0295 19.5054 17.3407 19.5481 17.6182 19.4431C17.8957 19.3374 18.0997 19.1004 18.1612 18.8131C18.8129 15.7501 20.3939 7.99737 20.9871 5.21111C21.0321 5.00111 20.9571 4.78286 20.7921 4.64261C20.6271 4.50236 20.3984 4.46186 20.1944 4.53761C17.0497 5.70161 7.3652 9.33537 3.40679 10.8001C3.15554 10.8931 2.99205 11.1346 3.0003 11.3994C3.0093 11.6649 3.18779 11.8951 3.44504 11.9724C5.22025 12.5034 7.55044 13.2421 7.55044 13.2421C7.55044 13.2421 8.63942 16.5309 9.20716 18.2034C9.27841 18.4134 9.44265 18.5784 9.6594 18.6354C9.87539 18.6916 10.1064 18.6324 10.2676 18.4801C11.1796 17.6191 12.5896 16.2879 12.5896 16.2879C12.5896 16.2879 15.2685 18.2521 16.788 19.3344ZM8.53067 12.8266L9.78989 16.9801L10.0696 14.3499C10.0696 14.3499 14.9348 9.96162 17.7082 7.46036C17.7892 7.38686 17.8005 7.26386 17.733 7.17761C17.6662 7.09136 17.5432 7.07111 17.451 7.12961C14.2365 9.18237 8.53067 12.8266 8.53067 12.8266Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M21 6.27927C20.3381 6.57995 19.627 6.78311 18.8794 6.87493C19.6508 6.40181 20.2278 5.65718 20.503 4.77997C19.7783 5.22122 18.9851 5.53181 18.158 5.69824C17.6018 5.08947 16.8651 4.68597 16.0623 4.55038C15.2594 4.41479 14.4354 4.5547 13.7181 4.94839C13.0007 5.34208 12.4303 5.96752 12.0953 6.72761C11.7602 7.4877 11.6794 8.33991 11.8652 9.15193C10.3968 9.07635 8.96033 8.68511 7.64898 8.0036C6.33762 7.32209 5.18071 6.36554 4.25332 5.19603C3.93623 5.75675 3.7539 6.40686 3.7539 7.09922C3.75354 7.72251 3.90328 8.33624 4.18981 8.88598C4.47634 9.43572 4.89082 9.90446 5.39646 10.2506C4.81005 10.2315 4.23658 10.0691 3.72377 9.77684V9.8256C3.72371 10.6998 4.0187 11.5471 4.55868 12.2237C5.09865 12.9003 5.85036 13.3646 6.68625 13.5377C6.14226 13.6886 5.57192 13.7109 5.01832 13.6027C5.25416 14.3549 5.71355 15.0127 6.33219 15.4839C6.95082 15.9551 7.69772 16.2163 8.46833 16.2308C7.16018 17.2835 5.54461 17.8545 3.88153 17.852C3.58693 17.8521 3.29258 17.8344 3 17.7992C4.68813 18.9118 6.65322 19.5023 8.66018 19.5C15.454 19.5 19.168 13.7319 19.168 8.72936C19.168 8.56683 19.164 8.40268 19.1569 8.24016C19.8793 7.70461 20.5029 7.04144 20.9984 6.28171L21 6.27927Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M3 21L4.27129 16.3778C3.48681 15.0247 3.0746 13.491 3.07536 11.9183C3.07762 7.00125 7.09796 3 12.0377 3C14.4348 3.00075 16.685 3.93 18.3775 5.616C20.0693 7.302 21.0008 9.543 21 11.9265C20.9977 16.8443 16.9774 20.8455 12.0377 20.8455C10.5381 20.8448 9.06029 20.4705 7.75132 19.7595L3 21ZM7.97136 18.1448C9.23436 18.891 10.4401 19.338 12.0347 19.3387C16.1402 19.3387 19.4846 16.0133 19.4868 11.925C19.4883 7.8285 16.1598 4.5075 12.0407 4.506C7.93218 4.506 4.59005 7.8315 4.58855 11.919C4.58779 13.5878 5.07913 14.8372 5.90429 16.1445L5.15147 18.8805L7.97136 18.1448ZM16.5524 14.0468C16.4966 13.9537 16.3474 13.8982 16.1228 13.7865C15.899 13.6748 14.798 13.1355 14.5923 13.0612C14.3873 12.987 14.2381 12.9495 14.0882 13.173C13.939 13.3958 13.5094 13.8982 13.379 14.0468C13.2487 14.1953 13.1176 14.214 12.8937 14.1023C12.6699 13.9905 11.948 13.7557 11.0927 12.996C10.4273 12.405 9.97739 11.6753 9.84702 11.4517C9.71665 11.229 9.83346 11.1082 9.94499 10.9973C10.046 10.8975 10.1688 10.737 10.2811 10.6065C10.3949 10.4775 10.4318 10.3845 10.5072 10.2353C10.5818 10.0868 10.5448 9.95625 10.4883 9.8445C10.4318 9.7335 9.98417 8.63625 9.79804 8.19C9.61567 7.75575 9.43105 7.81425 9.2939 7.8075L8.86436 7.8C8.71515 7.8 8.47249 7.8555 8.26752 8.079C8.06255 8.3025 7.4838 8.841 7.4838 9.93825C7.4838 11.0355 8.28636 12.0953 8.39789 12.2437C8.51017 12.3923 9.97664 14.6438 12.2231 15.609C12.7573 15.8385 13.1748 15.9757 13.4996 16.0785C14.0362 16.248 14.5245 16.224 14.9103 16.167C15.3406 16.1032 16.2351 15.6277 16.422 15.1073C16.6089 14.586 16.6089 14.1398 16.5524 14.0468Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="menu-column__item menu-column__item_adapt menu-column__item_adapt700">
+            <div class="menu-column__title" lang="en">Languages</div>
+            <div class="menu-column__title" lang="ru">Языки</div>
+            <ul class="menu-column__list menu-column__list_row langs">
+               <li>
+                  <div class="menu-column__list_lang" id="ru">ru</div>
+               </li>
+               <li>
+                  <div class="menu-column__list_lang" id="en">en</div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="menu__form menu-form">
+         <form action="" class="menu-form__item">
+            <h2 class="menu-form__title" lang="en">Subcribe to our news</h2>
+            <h2 class="menu-form__title" lang="ru">Подписывайтесь на наши новости</h2>
+            <input class="menu-form__input" type="text" placeholder="Your Email">
+            <button class="menu-form__button btn" type="submit" lang="en"><span>Subscribe</span></button>
+            <button class="menu-form__button btn" type="submit" lang="ru"><span>Подписаться</span></button>
+         </form>
+      </div>
+   </nav>
+</header>
+      <main class="main">
+         <div class="bgBlack"></div>
+         <section class="section start">
+            <div class="container">
+               <div class="start__row">
+                  <div class="start__title title title_light">Starting from <br>
+                     the ground<span>.</span></div>
+                  <div class="start__subtitle subtitle" lang="en">we create a space for a full life</div>
+                  <div class="start__subtitle subtitle" lang="ru">мы создаем пространство для полноценной жизни</div>
+                  <a href="#" class="start__link btn" lang="en"><span>Urbanistics</span></a>
+                  <a href="#" class="start__link btn" lang="ru"><span>Урбанистика</span></a>
+                  <ul class="start__list start-list">
+                     <li class="start-list__item link" lang="ru">
+                        <a href="#">Наша миссия</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="start-list__item link" lang="ru">
+                        <a href="#">Департаменты</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="start-list__item link" lang="ru">
+                        <a href="#">Презентация</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="start-list__item link" lang="en">
+                        <a href="#">Our mission</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="start-list__item link" lang="en">
+                        <a href="#">Departaments</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="start-list__item link" lang="en">
+                        <a href="#">Presentation</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#333333" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="section jump">
+            <div class="container">
+               <div class="jump__row">
+                  <div class="jump__content">
+                     <div class="jump__title title">a leap into the architecture of the XXI century<span>.</span></div>
+                     <div class="jump__subtitle">We can trace the power of civilizations, the development of society,
+                        culture and economy through the architecture and evolution of cities.</div>
+                     <div class="jump__link link">
+                        <a href="#">Our team</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#F2F2F2" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="jump__slider jump-slider">
+                     <div class="jump-slider__wrapper" style="transform: translateX(0)">
+                        <div class="jump-slider__slide jump-slide">
+                           <div class="jump-slide__title">Le Corbusier</div>
+                           <div class="jump-slide__subtitle">Swiss-French architect</div>
+                           <div class="jump-slide__label">No building will stand forever. Only feelings and ideas are
+                              eternal.</div>
+                        </div>
+                        <div class="jump-slider__slide jump-slide">
+                           <div class="jump-slide__title">Le Corbusier</div>
+                           <div class="jump-slide__subtitle">Swiss-French architect</div>
+                           <div class="jump-slide__label">No building will stand forever. Only feelings and ideas are
+                              eternal.</div>
+                        </div>
+                        <div class="jump-slider__slide jump-slide">
+                           <div class="jump-slide__title">Le Corbusier</div>
+                           <div class="jump-slide__subtitle">Swiss-French architect</div>
+                           <div class="jump-slide__label">No building will stand forever. Only feelings and ideas are
+                              eternal.</div>
+                        </div>
+                     </div>
+                     <div class="jump-slider__buttons">
+                        <div class="jump-slider__button_prev active">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                        <div class="jump-slider__button_next">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="jump-slider__counter">Building #<span>1</span></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section president">
+            <div class="president__letter">A</div>
+            <div class="container">
+               <div class="president__row">
+                  <div class="president__content">
+                     <div class="president__title title title_light">THE PRESIDENT'S WORDS
+                        THE FOUNDER<span>.</span></div>
+                     <div class="president__subtitle">
+                        The art of inscribing new objects into the existing urban space and natural landscape while
+                        preserving the heritage and history of urban areas is our priority task
+                     </div>
+                     <div class="president__info">
+                        <div class="president__name">Marta Marich</div>
+                        <div class="president__post">President founder</div>
+                     </div>
+                  </div>
+                  <div class="president__image">
+                     <div class="president__rect"></div>
+                     <picture><source srcset="img/president.webp" type="image/webp"><img src="img/president.png" alt=""></picture>
+                  </div>
+                  <div class="president__adapt">
+                     <div class="president__subtitle">
+                        The art of inscribing new objects into the existing urban space and natural landscape while
+                        preserving the heritage and history of urban areas is our priority task
+                     </div>
+                     <div class="president__info">
+                        <div class="president__name">Marta Marich</div>
+                        <div class="president__post">President founder</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section principles">
+            <div class="float">
+               <div class="float__wrapper">
+                  <span>Functionalism. </span>
+                  <span>brutalism.</span>
+                  <span>efficiency.</span>
+                  <span>Functionalism.</span>
+                  <span>brutalism.</span>
+                  <span>efficiency.</span>
+                  <span>Functionalism.</span>
+               </div>
+            </div>
+            <div class="principles__building">
+               <picture><source srcset="img/principlesBuilding.webp" type="image/webp"><img src="img/principlesBuilding.png" alt=""></picture>
+            </div>
+            <div class="container">
+               <div class="principles__row">
+                  <div class="principles__content">
+                     <div class="principles__title title title_light">
+                        Company principles<span>.</span>
+                     </div>
+                     <ul class="principles__list">
+                        <li class="principles__item">
+                           <span>01</span>
+                           <div class="principles__text">
+                              Create construction objects
+                              from the very beginning, from the bare ground.
+                              From the search for land, funds, ideas
+                           </div>
+                        </li>
+                        <li class="principles__item">
+                           <span>02</span>
+                           <div class="principles__text">
+                              The three main tools are ideas, money and technology. The two main teachers are experience
+                              and knowledge.
+                           </div>
+                        </li>
+                        <li class="principles__item">
+                           <span>03</span>
+                           <div class="principles__text">
+                              We are experts in unlocking the potential of: land resources, future projects. We are
+                              creators.
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="principles__slogan">
+                     <div class="principles__slogan_start">Build the</div>
+                     <div class="principles__slogan_end">Future <span>.</span></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section expertise">
+            <div class="container">
+               <div class="expertise__row">
+                  <div class="expertise__title title">
+                     Our expertise<span>.</span>
+                  </div>
+                  <div class="expertise__subtitle subtitle">
+                     The Acorn Group of Companies was created by professionals in the field of urbanism, urban
+                     development
+                     and construction.
+                  </div>
+               </div>
+            </div>
+            <div class="expertise__grid">
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M53.0467 8.50195H10.6654C7.72403 8.50195 5.33203 10.894 5.33203 13.8353V51.1686C5.33203 54.11 7.72403 56.502 10.6654 56.502H53.0467C55.988 56.502 58.38 54.11 58.38 51.1686V21.8326V19.166V16.4993V13.8353V13.8326C58.3774 10.8913 55.9827 8.50195 53.0467 8.50195ZM21.332 51.1686H10.6654V21.8326H21.332V51.1686ZM37.332 51.1686H26.6654V21.8326H37.332V51.1686ZM42.6654 51.1686V21.8326H53.0467L53.0494 51.1686H42.6654V51.1686Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Project management</div>
+                     <div class="experise-item__text">Control of volumes, quality, terms and cost of construction,
+                        control of contractors' work, optimization of time and financial costs</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8 13.8333V51.1667C8 54.108 10.392 56.5 13.3333 56.5H50.6667C53.608 56.5 56 54.108 56 51.1667V13.8333C56 10.892 53.608 8.5 50.6667 8.5H13.3333C10.392 8.5 8 10.892 8 13.8333ZM50.672 51.1667H13.3333V13.8333H50.6667L50.672 51.1667Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M40.0013 32.4993H45.3346V19.166H32.0013V24.4993H40.0013V32.4993ZM32.0013 40.4993H24.0013V32.4993H18.668V45.8327H32.0013V40.4993Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Fee-development</div>
+                     <div class="experise-item__text">A full cycle of development, maintenance and implementation of
+                        an investment and construction project, from the search for financing to the commissioning of
+                        the facility</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M31.9987 42.6673C37.8814 42.6673 42.6654 37.8833 42.6654 32.0007C42.6654 26.118 37.8814 21.334 31.9987 21.334C26.116 21.334 21.332 26.118 21.332 32.0007C21.332 37.8833 26.116 42.6673 31.9987 42.6673ZM31.9987 26.6673C34.8894 26.6673 37.332 29.11 37.332 32.0007C37.332 34.8913 34.8894 37.334 31.9987 37.334C29.108 37.334 26.6654 34.8913 26.6654 32.0007C26.6654 29.11 29.108 26.6673 31.9987 26.6673Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M7.58597 43.03L10.2526 47.6433C11.6686 50.0887 15.0766 51.006 17.5326 49.59L18.9433 48.774C20.4953 49.9927 22.1993 50.9927 23.9993 51.7393V53.334C23.9993 56.2753 26.3913 58.6673 29.3326 58.6673H34.666C37.6073 58.6673 39.9993 56.2753 39.9993 53.334V51.7393C41.7993 50.9927 43.5033 49.9927 45.0553 48.7767L46.466 49.5927C48.9273 51.006 52.3273 50.094 53.7486 47.6433L56.4126 43.0326C57.8846 40.486 57.01 37.2167 54.4633 35.7473L53.1166 34.9687C53.2606 33.9793 53.3326 32.99 53.3326 32.0007C53.3326 31.0113 53.2606 30.0193 53.1166 29.038L54.4633 28.2593C57.01 26.7873 57.8846 23.5207 56.4126 20.974L53.7486 16.3633C52.3326 13.91 48.9273 12.99 46.466 14.4113L45.0553 15.2273C43.5033 14.0087 41.7993 13.0087 39.9993 12.262V10.6673C39.9993 7.72598 37.6073 5.33398 34.666 5.33398H29.3326C26.3913 5.33398 23.9993 7.72598 23.9993 10.6673V12.262C22.1993 13.0087 20.4953 14.0087 18.9433 15.2247L17.5326 14.4087C15.0686 12.9927 11.666 13.91 10.25 16.3607L7.58597 20.9713C6.11397 23.518 6.98863 26.7873 9.5353 28.2567L10.882 29.0353C10.738 30.0193 10.666 31.0113 10.666 32.0007C10.666 32.99 10.738 33.9793 10.882 34.9633L9.5353 35.742C6.98863 37.214 6.11397 40.4833 7.58597 43.03ZM16.4553 35.6753C16.154 34.4673 15.9993 33.23 15.9993 32.0007C15.9993 30.7687 16.154 29.5313 16.4526 28.326C16.7406 27.1713 16.2313 25.966 15.1993 25.3713L12.2046 23.638L14.866 19.0273L17.9193 20.7927C18.9433 21.382 20.2313 21.2327 21.0873 20.414C22.9086 18.6887 25.106 17.398 27.4446 16.6833C28.5673 16.342 29.3326 15.3047 29.3326 14.134V10.6673H34.666V14.134C34.666 15.3047 35.4313 16.342 36.554 16.6833C38.8926 17.4007 41.09 18.6887 42.9113 20.414C43.7673 21.2327 45.0606 21.3793 46.0793 20.7927L49.13 19.03L51.7966 23.6407L48.7993 25.3713C47.7673 25.9687 47.258 27.174 47.546 28.326C47.8446 29.5313 47.9993 30.7687 47.9993 32.0007C47.9993 33.23 47.8446 34.4673 47.5433 35.6753C47.258 36.83 47.7673 38.0353 48.7993 38.63L51.794 40.3607L49.1326 44.9713L46.0793 43.2086C45.058 42.6193 43.7673 42.766 42.9113 43.5873C41.09 45.3127 38.8926 46.6033 36.554 47.318C35.4313 47.6593 34.666 48.6967 34.666 49.8673L34.6713 53.334H29.3326V49.8673C29.3326 48.6967 28.5673 47.6593 27.4446 47.318C25.106 46.6007 22.9086 45.3127 21.0873 43.5873C20.5806 43.102 19.9193 42.854 19.2526 42.854C18.794 42.854 18.3353 42.9713 17.9193 43.2113L14.8686 44.9767L12.202 40.366L15.1993 38.63C16.2313 38.0353 16.7406 36.83 16.4553 35.6753Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Technical Customer Service</div>
+                     <div class="experise-item__text">Control of volumes, quality, terms and cost of construction,
+                        control of contractors' work, optimization of time</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M50.6667 5.83398H24C21.0587 5.83398 18.6667 8.22598 18.6667 11.1673V27.1673H13.3333C10.392 27.1673 8 29.5593 8 32.5007V56.5007C8 57.9727 9.192 59.1673 10.6667 59.1673H32H53.3333C54.808 59.1673 56 57.9727 56 56.5007V11.1673C56 8.22598 53.608 5.83398 50.6667 5.83398ZM13.3333 32.5007H21.3333H29.3333V37.834V43.1673V53.834H13.3333V32.5007ZM50.6667 53.834H34.6667V43.1673V37.834V32.5007C34.6667 29.5593 32.2747 27.1673 29.3333 27.1673H24V11.1673H50.6667V53.834Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M29.3346 16.5H34.668V21.8333H29.3346V16.5ZM40.0013 16.5H45.3346V21.8333H40.0013V16.5ZM40.0013 27.2493H45.3346V32.5H40.0013V27.2493ZM40.0013 37.8333H45.3346V43.1667H40.0013V37.8333ZM18.668 37.836H24.0013V43.1693H18.668V37.836Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Land-development</div>
+                     <div class="experise-item__text">Control of volumes, quality, terms and cost of construction,
+                        control of contractors' work, optimization of time and financial costs</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M8.27335 56.2259C10.1347 58.0899 12.796 59.0739 15.972 59.0739C20.6173 59.0739 26.252 56.9992 32.004 53.4019C37.7534 57.0019 43.3907 59.0739 48.036 59.0739C51.2094 59.0739 53.8707 58.0899 55.7347 56.2259C59.1187 52.8419 59.4974 47.1245 56.804 40.1219C55.8494 37.6365 54.5267 35.0685 52.9187 32.4979C54.5294 29.9272 55.8494 27.3592 56.804 24.8739C59.4974 17.8712 59.116 12.1512 55.7347 8.76988C53.8734 6.90588 51.212 5.92188 48.036 5.92188C43.3907 5.92188 37.756 7.99654 32.004 11.5939C26.2547 7.99387 20.6173 5.92188 15.972 5.92188C12.7987 5.92188 10.1373 6.90588 8.27335 8.76988C4.88935 12.1539 4.50802 17.8712 7.20135 24.8739C8.15868 27.3592 9.47868 29.9272 11.0867 32.4979C9.47602 35.0685 8.15602 37.6365 7.20135 40.1219C4.50802 47.1245 4.88935 52.8419 8.27335 56.2259ZM51.8227 42.0365C53.66 46.8099 53.7107 50.7059 51.9614 52.4552C51.108 53.3085 49.788 53.7405 48.0334 53.7405C44.9214 53.7405 40.9774 52.3992 36.812 50.0605C39.1107 48.2845 41.3934 46.2952 43.596 44.0925C45.7827 41.9059 47.78 39.6205 49.5667 37.3032C50.4627 38.9059 51.228 40.4925 51.8227 42.0365ZM32.0014 46.9432C29.34 45.0365 26.684 42.8285 24.1774 40.3219C21.6574 37.7992 19.4227 35.1565 17.5107 32.4979C19.4227 29.8392 21.6574 27.1965 24.1774 24.6739C26.684 22.1699 29.34 19.9619 32.0014 18.0525C34.6627 19.9592 37.3187 22.1672 39.8254 24.6739C42.3454 27.1965 44.58 29.8392 46.492 32.4979C44.58 35.1565 42.3454 37.7992 39.8254 40.3219C37.3187 42.8259 34.6627 45.0339 32.0014 46.9432ZM48.0334 11.2552C49.7854 11.2552 51.1054 11.6872 51.9614 12.5405C53.7107 14.2899 53.6627 18.1859 51.8227 22.9592C51.228 24.5032 50.4627 26.0899 49.5667 27.6925C47.78 25.3752 45.7827 23.0899 43.596 20.9032C41.3934 18.7005 39.1107 16.7112 36.812 14.9352C40.9774 12.5992 44.9214 11.2552 48.0334 11.2552ZM12.18 22.9592C10.3427 18.1859 10.292 14.2899 12.0413 12.5405C12.8947 11.6872 14.2147 11.2552 15.9693 11.2552C19.0814 11.2552 23.0254 12.5965 27.1907 14.9352C24.892 16.7112 22.612 18.7005 20.4067 20.9032C18.22 23.0899 16.2227 25.3752 14.436 27.6925C13.54 26.0899 12.7747 24.5032 12.18 22.9592ZM12.18 42.0365C12.7747 40.4925 13.54 38.9059 14.436 37.3032C16.2227 39.6205 18.22 41.9059 20.4067 44.0925C22.6094 46.2952 24.892 48.2845 27.1907 50.0605C23.0227 52.3992 19.0814 53.7405 15.9693 53.7405C14.2173 53.7405 12.8973 53.3085 12.0413 52.4552C10.292 50.7059 10.3427 46.8099 12.18 42.0365Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M32.0007 39.3628C35.7916 39.3628 38.8647 36.2896 38.8647 32.4988C38.8647 28.7079 35.7916 25.6348 32.0007 25.6348C28.2098 25.6348 25.1367 28.7079 25.1367 32.4988C25.1367 36.2896 28.2098 39.3628 32.0007 39.3628Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Management of territories</div>
+                     <div class="experise-item__text">Control of volumes, quality, terms and cost of construction,
+                        control of contractors' work, optimization of time and financial costs</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M21.332 32.5C27.412 32.5 31.9987 27.9133 31.9987 21.8333C31.9987 15.7533 27.412 11.1666 21.332 11.1666C15.252 11.1666 10.6654 15.7533 10.6654 21.8333C10.6654 27.9133 15.252 32.5 21.332 32.5ZM21.332 16.5C24.4734 16.5 26.6654 18.692 26.6654 21.8333C26.6654 24.9746 24.4734 27.1666 21.332 27.1666C18.1907 27.1666 15.9987 24.9746 15.9987 21.8333C15.9987 18.692 18.1907 16.5 21.332 16.5ZM23.9987 35.1666H18.6654C11.3134 35.1666 5.33203 41.148 5.33203 48.5V51.1666H10.6654V48.5C10.6654 44.0893 14.2547 40.5 18.6654 40.5H23.9987C28.4094 40.5 31.9987 44.0893 31.9987 48.5V51.1666H37.332V48.5C37.332 41.148 31.3507 35.1666 23.9987 35.1666ZM48.9694 7.5293L45.1987 11.3C48.7214 14.828 50.6654 19.516 50.6654 24.5C50.6654 29.484 48.7214 34.172 45.1987 37.7L48.9694 41.4706C53.5027 36.9346 55.9987 30.908 55.9987 24.5C55.9987 18.092 53.5027 12.0653 48.9694 7.5293Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M41.4269 15.0703L37.6562 18.8463C39.1682 20.353 40.0002 22.361 40.0002 24.4996C40.0002 26.6383 39.1682 28.6463 37.6562 30.153L41.4269 33.929C43.9442 31.4116 45.3336 28.065 45.3336 24.4996C45.3336 20.9343 43.9442 17.5876 41.4269 15.0703Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Strategic consulting</div>
+                     <div class="experise-item__text">professional assistance at all stages of the construction of
+                        any object, elimination of unnecessary
+                        costs, selection of reliable performers, preparation of estimates, obtaining approvals,
+                        checking
+                        documentation, quality control of work.</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M31.9987 5.33398C17.2947 5.33398 5.33203 17.2967 5.33203 32.0007C5.33203 46.7047 17.2947 58.6673 31.9987 58.6673C46.7027 58.6673 58.6654 46.7047 58.6654 32.0007C58.6654 17.2967 46.7027 5.33398 31.9987 5.33398ZM31.9987 53.334C20.236 53.334 10.6654 43.7633 10.6654 32.0007C10.6654 20.238 20.236 10.6673 31.9987 10.6673C43.7614 10.6673 53.332 20.238 53.332 32.0007C53.332 43.7633 43.7614 53.334 31.9987 53.334Z"
+                           fill="#4F4F4F" />
+                        <path
+                           d="M31.9987 29.3326C26.6654 29.3326 26.6654 27.6633 26.6654 26.6659C26.6654 25.3753 28.5347 23.9993 31.9987 23.9993C35.1587 23.9993 35.6947 25.7006 35.732 26.7139L38.3987 26.6659H41.0654C41.0654 23.9299 39.2894 20.0819 34.6654 18.9886V16.0312H29.332V18.8926C24.076 19.7752 21.332 23.2313 21.332 26.6659C21.332 29.6526 22.7187 34.6659 31.9987 34.6659C37.332 34.6659 37.332 36.4686 37.332 37.3326C37.332 38.4393 35.6787 39.9993 31.9987 39.9993C27.0894 39.9993 26.6947 37.7139 26.6654 37.3326H21.332C21.332 39.7806 23.0947 44.1406 29.332 45.1193V47.9993H34.6654V45.1059C39.9214 44.2233 42.6654 40.7673 42.6654 37.3326C42.6654 34.3459 41.2787 29.3326 31.9987 29.3326Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">Attraction / Justification of investments</div>
+                     <div class="experise-item__text">
+                        assessment of the project cost at all stages of its life cycle, expediency and efficiency of
+                        investments, consultations on the conditions of state support and receipt of funds from other
+                        sources.</div>
+                  </div>
+               </div>
+               <div class="expertise__item experise-item">
+                  <div class="experise-item__image">
+                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M13.6601 56.0007C14.6681 57.0087 16.0067 57.5633 17.4307 57.5633C18.8547 57.5633 20.1934 57.0087 21.2014 56.0007L32.7641 44.438C34.6734 45.0273 36.6547 45.326 38.6761 45.326C44.0174 45.326 49.0414 43.2487 52.8147 39.4727C58.5374 33.7473 60.2467 25.2087 57.1667 17.718L55.6467 14.0167L44.3294 25.3313L38.6734 19.6727L49.9881 8.35798L46.2841 6.83532C43.8574 5.83798 41.2947 5.33398 38.6654 5.33398C33.3241 5.33398 28.3027 7.41398 24.5294 11.19C19.2361 16.4807 17.3774 24.182 19.5641 31.238L8.00141 42.8007C5.92141 44.878 5.92141 48.2647 8.00141 50.342L13.6601 56.0007ZM25.7881 32.558L25.1107 30.9153C22.8494 25.4193 24.1027 19.1553 28.3001 14.9607C31.0681 12.1927 34.7481 10.6673 38.6654 10.6673C39.1374 10.6673 39.6041 10.6887 40.0681 10.734L31.1267 19.6753L44.3241 32.8753L53.2707 23.9287C53.6867 28.2167 52.1961 32.5447 49.0387 35.7047C44.9054 39.838 38.4681 41.11 33.0814 38.894L31.4414 38.214L17.4307 52.23H17.4334L17.4307 54.8967V52.23L11.7721 46.5713L25.7881 32.558Z"
+                           fill="#4F4F4F" />
+                     </svg>
+                  </div>
+                  <div class="experise-item__content">
+                     <div class="experise-item__title">General Designer</div>
+                     <div class="experise-item__text">
+                        Control of volumes, quality, terms and cost of construction, control of contractors' work,
+                        optimization of time</div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section vitra">
+            <div class="float">
+               <div class="float__wrapper">
+                  <span>Functionalism. </span>
+                  <span>brutalism.</span>
+                  <span>efficiency.</span>
+                  <span>Functionalism.</span>
+                  <span>brutalism.</span>
+                  <span>efficiency.</span>
+                  <span>Functionalism.</span>
+               </div>
+            </div>
+            <div class="container">
+               <div class="vitra__row">
+                  <div class="vitra__content">
+                     <div class="vitra__title title title_light">Vitra Design Museum<span>.</span></div>
+                     <div class="vitra__subtitle subtitle">presents the first overview of post-war design in the two
+                        Germanies.</div>
+                     <div class="vitra__text">
+                        Parallels and interrelations between East and West. Exhibits range from iconic pieces of
+                        furniture and lamps to graphic, industrial, and interior design to fashions, textiles, and
+                        personal ornaments.
+                     </div>
+                     <a href="#" class="vitra__link btn"><span>Urbanism</span></a>
+                  </div>
+                  <div class="vitra__slider vitra-slider">
+                     <div class="vitra-slider__curtain"></div>
+                     <div class="vitra-slider__title">BUILD THE FUTURE<span>.</span></div>
+                     <div class="vitra-slider__wrapper">
+                        <div class="vitra-slider__slide vitra-slide">
+                           <div class="vitra-slide__logo">
+                              <img src="img/vitra-logo.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="vitra-slider__slide vitra-slide">
+                           <div class="vitra-slide__logo">
+                              <img src="img/vitra-logo.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="vitra-slider__slide vitra-slide">
+                           <div class="vitra-slide__logo">
+                              <img src="img/vitra-logo.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="vitra-slider__buttons">
+                        <div class="vitra-slider__button_prev active">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                        <div class="vitra-slider__button_next">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="vitra-slider__counter">Building #<span>1</span></div>
+                     <div class="vitra-slider__counter1">Building #<span>1</span></div>
+                     <div class="vitra-slider__small">
+                        <div class="vitra-slider__wrapper_small">
+                           <div class="vitra__small-slide">
+                              <div class="vitra-slider__text">
+                                 <div>
+                                    <p>Vitra Design Museum presents the first overview of post-war design in the two
+                                       Germanies.
+                                    </p>
+                                 </div>
+                                 <p class="vitra-slider__text_name">
+                                    <span>Le Corbusier</span>
+                                    <span>Swiss-French architect</span>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="vitra__small-slide">
+                              <div class="vitra-slider__text">
+                                 <div>
+                                    <p>Vitra Design Museum presents the first overview of post-war design in the two
+                                       Germanies.
+                                    </p>
+                                 </div>
+                                 <p class="vitra-slider__text_name">
+                                    <span>Le Corbusier</span>
+                                    <span>Swiss-French architect</span>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="vitra__small-slide">
+                              <div class="vitra-slider__text">
+                                 <div>
+                                    <p>Vitra Design Museum presents the first overview of post-war design in the two
+                                       Germanies.
+                                    </p>
+                                 </div>
+                                 <p class="vitra-slider__text_name">
+                                    <span>Le Corbusier</span>
+                                    <span>Swiss-French architect</span>
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="vitra-slider__row">
+                        <div class="vitra-item">
+                           <picture><source srcset="img/vitra1.webp" type="image/webp"><img src="img/vitra1.png" alt=""></picture>
+                        </div>
+                        <div class="vitra-item">
+                           <picture><source srcset="img/vitra2.webp" type="image/webp"><img src="img/vitra2.png" alt=""></picture>
+                        </div>
+                        <div class="vitra-item">
+                           <picture><source srcset="img/vitra3.webp" type="image/webp"><img src="img/vitra3.png" alt=""></picture>
+                        </div>
+                        <div class="vitra-item">
+                           <picture><source srcset="img/vitra4.webp" type="image/webp"><img src="img/vitra4.png" alt=""></picture>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section group">
+            <div class="group__row">
+               <div class="group__content">
+                  <div class="group__title title">
+                     A Group of Companies<span>.</span>
+                  </div>
+                  <div class="group__text">
+                     Vitra Design Museum presents the first overview of post-war design in the two Germanies. “German
+                     Design 1949–1989: Two Countries, One History” offers a comparative
+                  </div>
+                  <ul class="group__links">
+                     <li class="group__link link">
+                        <a href="#">Neustadt</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#F2F2F2" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                     <li class="group__link link">
+                        <a href="#">Basis</a>
+                        <div class="svg">
+                           <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0 8H8M8 8V0M8 8L2.8 2.8" stroke="#F2F2F2" stroke-width="2" />
+                           </svg>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="group__main group-main">
+                  <div class="group-main__image">
+                     <img src="img/group.svg" alt="">
+                  </div>
+                  <div class="group-main__logo">
+                     <img src="img/group_acorn.svg" alt="">
+                  </div>
+                  <ul class="group-main__list">
+                     <li class="group-main__item">
+                        <p class="group-main__text text-group">
+                           In times of social distancing and spatial boundaries, can we give up human control and
+                           embrace a biocentric perspective in its place? LIFE by Olafur Eliasson entangles the
+                           Fondation
+                        </p>
+                        <span class="group-main__number">15</span>
+                        <span class="group-main__caption">Years of successful work</span>
+                     </li>
+                     <li class="group-main__item">
+                        <p class="group-main__text text-group">
+                           In times of social distancing and spatial boundaries, can we give up human control and
+                           embrace a biocentric perspective in its place? LIFE by Olafur Eliasson entangles the
+                           Fondation
+                        </p>
+                        <span class="group-main__number">15</span>
+                        <span class="group-main__caption">Years of successful work</span>
+                     </li>
+                     <li class="group-main__item">
+                        <div class="group-main__item_red">
+                           <p class="group-main__text text-group">
+                              In times of social distancing and spatial boundaries, can we give up human control and
+                              embrace a biocentric perspective in its place? LIFE by Olafur Eliasson entangles the
+                              Fondation
+                           </p>
+                           <span class="group-main__number">15</span>
+                           <span class="group-main__caption">Years of successful work</span>
+                        </div>
+                     </li>
+                     <li class="group-main__item">
+                        <p class="group-main__text text-group">
+                           In times of social distancing and spatial boundaries, can we give up human control and
+                           embrace a biocentric perspective in its place? LIFE by Olafur Eliasson entangles the
+                           Fondation
+                        </p>
+                        <span class="group-main__number">15</span>
+                        <span class="group-main__caption">Years of successful work</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="section presentation">
+            <div class="container">
+               <div class="presentation__image">
+                  <div class="presentation__content">
+                     <div class="presentation__column">
+                        <div class="presentation__logo">
+                           <svg width="117" height="24" viewBox="0 0 117 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M112.96 3.9375V15.3221L99.975 3.9375H95.793V19.5051H99.7659V8.4439L112.333 19.5051H116.933V3.9375H112.96Z"
+                                 fill="#333333" />
+                              <path
+                                 d="M87.5564 14.2009C90.8554 13.6187 92.6548 11.8938 92.6548 9.19856C92.6548 5.79181 89.7629 3.9375 84.5787 3.9375H72.668V19.5051H76.7382V14.4381H82.9506L88.1348 19.5051H93.0833L93.1476 19.4188L87.5564 14.2009ZM76.7382 7.17176H84.4716C87.1922 7.17176 88.5846 7.60299 88.5846 9.19856C88.5846 10.7726 87.1922 11.2038 84.4716 11.2038H76.7382V7.17176Z"
+                                 fill="#333333" />
+                              <path
+                                 d="M46.9062 11.7213C46.9062 16.6352 51.3206 19.5051 58.7976 19.5051C66.2746 19.5051 70.689 16.6352 70.689 11.7213C70.689 6.80738 66.2746 3.9375 58.7976 3.9375C51.3206 3.9375 46.9062 6.80738 46.9062 11.7213ZM66.6759 11.7213C66.6759 14.6531 63.8879 16.4081 58.7976 16.4081C53.7074 16.4081 50.9193 14.6531 50.9193 11.7213C50.9193 8.78946 53.7074 7.0345 58.7976 7.0345C63.8879 7.0345 66.6759 8.78946 66.6759 11.7213Z"
+                                 fill="#333333" />
+                              <path
+                                 d="M23.1211 11.7213C23.1211 16.6352 27.6158 19.5051 35.2504 19.5051C38.4763 19.5051 41.186 18.9889 44.2398 17.4817V14.1369L44.1323 14.1163C41.4226 15.5203 38.4978 16.4081 35.4009 16.4081C29.9815 16.4081 27.2072 14.6531 27.2072 11.7419C27.2072 8.78946 30.046 7.0345 35.4009 7.0345C38.4978 7.0345 41.4226 7.90165 44.1323 9.32627L44.2613 9.30563V5.96087C41.4656 4.57755 38.5408 3.9375 35.0138 3.9375C27.5943 3.9375 23.1211 6.80738 23.1211 11.7213Z"
+                                 fill="#333333" />
+                              <path
+                                 d="M18.8066 19.5051H23.1221L13.8775 3.9375H9.73118L0 19.5051H4.31556L6.21949 16.3786H17.0084L18.8066 19.5051ZM8.12342 13.209L11.762 7.23645L15.1891 13.209H8.12342Z"
+                                 fill="#333333" />
+                           </svg>
+                        </div>
+                        <div class="presentation__title">
+                           Presentation
+                        </div>
+                        <div class="presentation__btn"><a href="img/group1.png" download
+                              class="presentation__link btn"><span>Download</span></a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section team">
+            <div class="container">
+               <div class="team__row">
+                  <div class="team__content">
+                     <div class="team__title title">CO-FOUNDERS
+                        <span>/</span> TEAM<span>.</span>
+                     </div>
+                     <div class="team__text">
+                        In times of social distancing and spatial boundaries, can we give up human control and embrace a
+                        biocentric perspective in its place?
+                     </div>
+                  </div>
+                  <div class="team__slider team-slider">
+                     <div class="team-slider__wrapper">
+                        <div class="team-slider__slide team-slide">
+                           <div class="team-slide__content">
+                              <p class="team-slide__text">
+                                 Urbanization does not mean turning a part of the universe into a stone jungle. Urbanism
+                                 is
+                                 the art of fitting a city into the diversity of nature"
+                              </p>
+                              <span class="team-slide__name">Ole Scheerena</span>
+                              <span class="team-slide__post">ceo</span>
+                           </div>
+                        </div>
+                        <div class="team-slider__slide team-slide">
+                           <div class="team-slide__content">
+                              <p class="team-slide__text">
+                                 Urbanization does not mean turning a part of the universe into a stone jungle. Urbanism
+                                 is
+                                 the art of fitting a city into the diversity of nature"
+                              </p>
+                              <span class="team-slide__name">Ole Scheerena</span>
+                              <span class="team-slide__post">ceo</span>
+                           </div>
+                        </div>
+                        <div class="team-slider__slide team-slide">
+                           <div class="team-slide__content">
+                              <p class="team-slide__text">
+                                 Urbanization does not mean turning a part of the universe into a stone jungle. Urbanism
+                                 is
+                                 the art of fitting a city into the diversity of nature"
+                              </p>
+                              <span class="team-slide__name">Ole Scheerena</span>
+                              <span class="team-slide__post">ceo</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-slider__buttons">
+                        <div class="team-slider__btn_prev active">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                        <div class="team-slider__btn_next">
+                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M20 0V20H0V16.3636H13.7923L5.07799 7.64928L7.64928 5.07799L16.3636 13.7923V0H20Z"
+                                 fill="#F2F2F2" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="team-slider__counter">
+                        <span>1</span>
+                        <p>/ 3</p>
+                     </div>
+                     <div class="team-slider__images team-images">
+                        <div class="team-images__wrapper">
+                           <div class="team-images__slide image-slide image-slide_active">
+                              <picture><source srcset="img/team/team1.webp" type="image/webp"><img src="img/team/team1.png" alt=""></picture>
+                           </div>
+                           <div class="team-images__slide image-slide">
+                              <picture><source srcset="img/team/team2.webp" type="image/webp"><img src="img/team/team2.png" alt=""></picture>
+                           </div>
+                           <div class="team-images__slide image-slide">
+                              <picture><source srcset="img/team/team3.webp" type="image/webp"><img src="img/team/team3.png" alt=""></picture>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__header footer-header">
+               <div class="header__logo svg footer-header__logo">
+                  <a href="#">
+                     <svg width="152" height="24" viewBox="0 0 152 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M7.82112 2.75918C4.81739 3.47597 0.630755 5.16615 0.183819 5.7672C-0.263117 6.36824 0.235406 9.88457 0.314882 10.3181C0.394358 10.7516 0.625693 10.8167 0.755613 10.8094C0.885534 10.8021 1.96251 9.50438 2.4059 9.175C3.57285 8.30813 3.9632 8.06271 4.45 8.06717C4.97143 7.96785 6.05155 8.56377 7.20615 8.00509C8.33948 7.45671 9.47399 7.07396 9.92507 6.99947C10.5246 6.96358 12.2477 7.18035 14.3447 8.33447C16.4416 9.4886 18.3204 10.1022 18.9977 10.2648C19.3405 10.347 20.0075 10.6996 20.2671 10.0819C20.5917 9.30979 20.4099 6.81054 20.4099 6.394C20.4099 6.06076 20.3147 5.95845 20.2671 5.94894C18.3398 4.25906 13.5546 3.11832 11.4029 2.75918C11.1418 2.59105 10.7763 2.12852 11.4029 1.6235C12.0295 1.11847 12.1082 0.797376 12.0692 0.699956C11.8588 0.279103 10.8885 0.127162 10.4092 0.0102587C10.0257 -0.0832643 9.63372 0.485668 9.48565 0.781825C8.76552 1.99762 8.07591 2.60665 7.82112 2.75918Z"
+                           fill="#333333" />
+                        <path
+                           d="M1.90362 12.047L2.45371 13.8456C2.883 13.456 4.76687 12.3103 6.71823 11.3609C8.66958 10.4116 10.1411 10.6608 11.4419 10.8618C12.7958 11.0451 15.0602 12.8481 15.2333 13.0471C15.3718 13.2064 17.0045 14.1231 17.8035 14.5616C18.1427 14.077 18.4987 12.3346 18.6343 11.524C18.8655 11.6092 16.6932 10.9835 14.4542 9.62058C12.2151 8.25769 11.1551 8.28486 10.9929 8.27221C10.7665 8.25456 9.09105 8.13215 7.80105 8.92827C6.76905 9.56516 6.06876 9.64084 5.84762 9.59907C3.96053 9.06243 2.432 11.0074 1.90362 12.047Z"
+                           fill="#333333" />
+                        <path
+                           d="M3.34431 15.8917C3.32758 16.0757 4.07447 17.0138 4.45 17.4599C5.20607 16.6791 7.11203 14.9657 8.68723 14.359C10.6562 13.6006 11.4647 14.4507 11.9438 14.8349C12.2644 15.0918 14.1398 16.4328 14.3447 16.6639C14.8571 17.242 15.3613 17.4049 16.0183 17.6305L17.1187 15.9204C17.1187 15.9204 16.7656 15.4259 16.1224 15.2215C15.4792 15.0171 15.0727 14.8353 14.6948 14.5616C13.7455 13.874 12.6248 12.9629 12.1474 12.7761C9.33058 11.9155 8.59828 12.2935 8.23722 12.3997C7.37111 12.6544 3.36522 15.6616 3.34431 15.8917Z"
+                           fill="#333333" />
+                        <path
+                           d="M5.84762 19.0888C6.28786 19.6447 6.717 19.91 6.87655 19.9732L7.53982 19.531C7.95568 19.1731 8.95164 18.4003 9.6086 18.1729C10.4298 17.8886 11.4419 18.4572 12.3407 18.7888C13.0597 19.0541 13.7141 19.5521 13.9515 19.7679L15.1359 18.694C14.9211 18.3782 14.162 18.0255 13.8093 17.8886C13.5303 17.8465 12.6439 17.5426 11.33 16.6639C10.016 15.7852 9.02068 16.2978 8.68723 16.6639L5.84762 19.0888Z"
+                           fill="#333333" />
+                        <path
+                           d="M8.8277 21.341L10.2348 22L12.1474 21.0026C11.9907 20.8245 11.4673 20.4469 10.6266 20.3614C9.78593 20.2759 9.07705 20.9788 8.8277 21.341Z"
+                           fill="#333333" />
+                        <path
+                           d="M78.3398 12.4547C78.3398 17.5628 82.9387 20.5461 90.7281 20.5461C98.5176 20.5461 103.116 17.5628 103.116 12.4547C103.116 7.34659 98.5176 4.36328 90.7281 4.36328C82.9387 4.36328 78.3398 7.34659 78.3398 12.4547ZM98.9357 12.4547C98.9357 15.5024 96.0311 17.3267 90.7281 17.3267C85.4252 17.3267 82.5206 15.5024 82.5206 12.4547C82.5206 9.40701 85.4252 7.58268 90.7281 7.58268C96.0311 7.58268 98.9357 9.40701 98.9357 12.4547Z"
+                           fill="#333333" />
+                        <path
+                           d="M53.5625 12.4547C53.5625 17.5628 58.245 20.5461 66.1986 20.5461C69.5593 20.5461 72.3823 20.0096 75.5637 18.4428V14.9658L75.4517 14.9444C72.6287 16.4038 69.5817 17.3267 66.3555 17.3267C60.7095 17.3267 57.8194 15.5024 57.8194 12.4762C57.8194 9.40701 60.7767 7.58268 66.3555 7.58268C69.5817 7.58268 72.6287 8.48411 75.4517 9.96504L75.5861 9.94358V6.46662C72.6735 5.02862 69.6265 4.36328 65.9522 4.36328C58.2226 4.36328 53.5625 7.34659 53.5625 12.4547Z"
+                           fill="#333333" />
+                        <path
+                           d="M49.0651 20.5461H53.561L43.9301 4.36328H39.6105L29.4727 20.5461H33.9686L35.952 17.2961H47.1918L49.0651 20.5461ZM37.9355 14.0013L41.7262 7.79261L45.2965 14.0013H37.9355Z"
+                           fill="#333333" />
+                        <path
+                           d="M147.861 4.36328V16.1978L134.333 4.36328H129.977V20.5461H134.116V9.04779L147.208 20.5461H152V4.36328H147.861Z"
+                           fill="#333333" />
+                        <path
+                           d="M121.401 15.0323C124.838 14.4271 126.713 12.634 126.713 9.83228C126.713 6.29088 123.7 4.36328 118.299 4.36328H105.891V20.5461H110.131V15.2789H116.603L122.004 20.5461H127.159L127.226 20.4565L121.401 15.0323ZM110.131 7.72537H118.187C121.022 7.72537 122.472 8.17365 122.472 9.83228C122.472 11.4685 121.022 11.9168 118.187 11.9168H110.131V7.72537Z"
+                           fill="#333333" />
+                     </svg>
+                  </a>
+               </div>
+               <div class="header-contacts__social header-social footer-header__social">
+                  <div class="header-social__tg svg">
+                     <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M16.788 19.3344C17.0295 19.5054 17.3407 19.5481 17.6182 19.4431C17.8957 19.3374 18.0997 19.1004 18.1612 18.8131C18.8129 15.7501 20.3939 7.99737 20.9871 5.21111C21.0321 5.00111 20.9571 4.78286 20.7921 4.64261C20.6271 4.50236 20.3984 4.46186 20.1944 4.53761C17.0497 5.70161 7.3652 9.33537 3.40679 10.8001C3.15554 10.8931 2.99205 11.1346 3.0003 11.3994C3.0093 11.6649 3.18779 11.8951 3.44504 11.9724C5.22025 12.5034 7.55044 13.2421 7.55044 13.2421C7.55044 13.2421 8.63942 16.5309 9.20716 18.2034C9.27841 18.4134 9.44265 18.5784 9.6594 18.6354C9.87539 18.6916 10.1064 18.6324 10.2676 18.4801C11.1796 17.6191 12.5896 16.2879 12.5896 16.2879C12.5896 16.2879 15.2685 18.2521 16.788 19.3344ZM8.53067 12.8266L9.78989 16.9801L10.0696 14.3499C10.0696 14.3499 14.9348 9.96162 17.7082 7.46036C17.7892 7.38686 17.8005 7.26386 17.733 7.17761C17.6662 7.09136 17.5432 7.07111 17.451 7.12961C14.2365 9.18237 8.53067 12.8266 8.53067 12.8266Z"
+                              fill="#4F4F4F" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="header-social__tw svg">
+                     <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M21 6.27927C20.3381 6.57995 19.627 6.78311 18.8794 6.87493C19.6508 6.40181 20.2278 5.65718 20.503 4.77997C19.7783 5.22122 18.9851 5.53181 18.158 5.69824C17.6018 5.08947 16.8651 4.68597 16.0623 4.55038C15.2594 4.41479 14.4354 4.5547 13.7181 4.94839C13.0007 5.34208 12.4303 5.96752 12.0953 6.72761C11.7602 7.4877 11.6794 8.33991 11.8652 9.15193C10.3968 9.07635 8.96033 8.68511 7.64898 8.0036C6.33762 7.32209 5.18071 6.36554 4.25332 5.19603C3.93623 5.75675 3.7539 6.40686 3.7539 7.09922C3.75354 7.72251 3.90328 8.33624 4.18981 8.88598C4.47634 9.43572 4.89082 9.90446 5.39646 10.2506C4.81005 10.2315 4.23658 10.0691 3.72377 9.77684V9.8256C3.72371 10.6998 4.0187 11.5471 4.55868 12.2237C5.09865 12.9003 5.85036 13.3646 6.68625 13.5377C6.14226 13.6886 5.57192 13.7109 5.01832 13.6027C5.25416 14.3549 5.71355 15.0127 6.33219 15.4839C6.95082 15.9551 7.69772 16.2163 8.46833 16.2308C7.16018 17.2835 5.54461 17.8545 3.88153 17.852C3.58693 17.8521 3.29258 17.8344 3 17.7992C4.68813 18.9118 6.65322 19.5023 8.66018 19.5C15.454 19.5 19.168 13.7319 19.168 8.72936C19.168 8.56683 19.164 8.40268 19.1569 8.24016C19.8793 7.70461 20.5029 7.04144 20.9984 6.28171L21 6.27927Z"
+                              fill="#4F4F4F" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="header-social__ws svg">
+                     <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M3 21L4.27129 16.3778C3.48681 15.0247 3.0746 13.491 3.07536 11.9183C3.07762 7.00125 7.09796 3 12.0377 3C14.4348 3.00075 16.685 3.93 18.3775 5.616C20.0693 7.302 21.0008 9.543 21 11.9265C20.9977 16.8443 16.9774 20.8455 12.0377 20.8455C10.5381 20.8448 9.06029 20.4705 7.75132 19.7595L3 21ZM7.97136 18.1448C9.23436 18.891 10.4401 19.338 12.0347 19.3387C16.1402 19.3387 19.4846 16.0133 19.4868 11.925C19.4883 7.8285 16.1598 4.5075 12.0407 4.506C7.93218 4.506 4.59005 7.8315 4.58855 11.919C4.58779 13.5878 5.07913 14.8372 5.90429 16.1445L5.15147 18.8805L7.97136 18.1448ZM16.5524 14.0468C16.4966 13.9537 16.3474 13.8982 16.1228 13.7865C15.899 13.6748 14.798 13.1355 14.5923 13.0612C14.3873 12.987 14.2381 12.9495 14.0882 13.173C13.939 13.3958 13.5094 13.8982 13.379 14.0468C13.2487 14.1953 13.1176 14.214 12.8937 14.1023C12.6699 13.9905 11.948 13.7557 11.0927 12.996C10.4273 12.405 9.97739 11.6753 9.84702 11.4517C9.71665 11.229 9.83346 11.1082 9.94499 10.9973C10.046 10.8975 10.1688 10.737 10.2811 10.6065C10.3949 10.4775 10.4318 10.3845 10.5072 10.2353C10.5818 10.0868 10.5448 9.95625 10.4883 9.8445C10.4318 9.7335 9.98417 8.63625 9.79804 8.19C9.61567 7.75575 9.43105 7.81425 9.2939 7.8075L8.86436 7.8C8.71515 7.8 8.47249 7.8555 8.26752 8.079C8.06255 8.3025 7.4838 8.841 7.4838 9.93825C7.4838 11.0355 8.28636 12.0953 8.39789 12.2437C8.51017 12.3923 9.97664 14.6438 12.2231 15.609C12.7573 15.8385 13.1748 15.9757 13.4996 16.0785C14.0362 16.248 14.5245 16.224 14.9103 16.167C15.3406 16.1032 16.2351 15.6277 16.422 15.1073C16.6089 14.586 16.6089 14.1398 16.5524 14.0468Z"
+                              fill="#4F4F4F" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__row">
+               <div class="footer__item footer__main">
+                  <ul class="footer__list">
+                     <li>
+                        <a href="#" class="footer__link active">Main Page</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Departments</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Companies</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Experience</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__item footer__presentation">
+                  <ul class="footer__list">
+                     <li>
+                        <a href="#" class="footer__link">Presentation</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Departments</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Companies</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Experience</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__item footer__team">
+                  <ul class="footer__list">
+                     <li>
+                        <a href="#" class="footer__link">Our Team</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Departments</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Companies</a>
+                     </li>
+                     <li>
+                        <a href="#" class="footer__link">Experience</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer__copy">
+               <div class="header__langs header-langs langs footer__langs">
+                  <div class="header-langs__item header-langs__ru" id="ru">ru</div>
+                  <span></span>
+                  <div class="header-langs__item header-langs__en active" id="en">en</div>
+               </div>
+               <span>© Acorn | all rights reserved</span>
+            </div>
+         </div>
+      </footer>
+      <footer></footer>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220620163010"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js?_v=20220620163010"></script>
+   <script src="js/app.min.js?_v=20220620163010"></script>
+</body>
+
+</html>
